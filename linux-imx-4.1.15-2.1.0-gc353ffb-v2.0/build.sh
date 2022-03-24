@@ -12,7 +12,7 @@ source /opt/fsl-imx-x11/4.1.15-2.1.0/environment-setup-cortexa7hf-neon-poky-linu
 #编译前先清除
 make distclean
 #配置defconfig文件
-make imx_v7_defconfig -j 16
+make imx_alientek_emmc_defconfig -j 16
 #开始编译zImage
 make zImage -j 16
 #eMMC类型核心板
@@ -25,6 +25,7 @@ make imx6ull-14x14-emmc-4.3-800x480-c.dtb
 make imx6ull-14x14-emmc-4.3-480x272-c.dtb
 make imx6ull-14x14-emmc-hdmi.dtb
 make imx6ull-14x14-emmc-vga.dtb
+make imx6ull-alientek-emmc.dtb
 
 #NandFlash类型核心板
 #编译正点原子各种显示设备的设备树，若用户没有屏，
